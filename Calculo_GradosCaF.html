@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo IMC</title>
+</head>
+<body bgcolor="#0000">
+<br></br>	
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Calculo de Grados a Fahrenheit y Viceversa</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="50%" >
+<tr>
+<td colspan="22" style="background-color: #009806 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calculo de Grados</span></td>
+</tr>
+<tr>
+<td WIDTH="50%" style="font-size: 30px; line-height: normal;color: white;background-color: #4D9450  ;">Grados Celsius:</td>
+<td colspan="1"WIDTH="50%" style="font-size: 5px; line-height: normal;color: white;background-color: #4D9450;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="C" size=5 ></td>
+<td rowspan="3" style="background: white"><img src="imagen7.png" width=100 heigth=100 alt="Programación"></td>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #4D9450;">Grados Fahrenheit:</td>
+<td colspan="1" style="font-size: 1px; line-height: normal;color: white;background-color: #4D9450;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="F" size=5></td>
+</tr>
+<tr>
+<td colspan="2"style="font-size: 1px; line-height: normal;color: white;background-color: #679369;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #679369;" type="button" value="Calcular" onclick="Calcular1()"></td>
+<td colspan="4"style="font-size: 1px; line-height: normal;color: white;background-color: #679369;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #679369;" type="button" value="Calcular" onclick="Calcular2()"></td>
+</tr>
+<tr>
+<td style="font-size: 1px; line-height: normal;color: white;background-color: #7A947B  ;" colspan="22"><input style="font-size: 30px; line-height: normal;color: white;background-color: #7A947B ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #869586;"colspan="22"align="center">Resultado:</td>
+</tr>
+<tr>
+<td style="font-size: 1px; line-height: normal;color: white;background-color: #868C86;"colspan="22" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular1(){
+var Celsius = Number(document.getElementById("C").value);
+var Fahrenheit=(Celsius*1.8)+32
+document.getElementById("resultado").value=Fahrenheit;
+}
+function Calcular2(){
+var Fahrenheit1 = Number(document.getElementById("F").value);
+var Celsius2=(Fahrenheit1-32)/1.8
+document.getElementById("resultado").value=Celsius2;
+}
+</script>
+<br><br>
+<img src="imagen8.png" width="300" height="300">
+<br></br>
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>

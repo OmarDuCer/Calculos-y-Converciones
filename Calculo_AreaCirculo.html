@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo Area Circulo</title>
+</head>
+<body bgcolor="#0000">
+<br></br>	
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Área de un Circulo</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="35%" >
+<tr>
+<td colspan="5" style="background-color: #3C0096 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calculo de Area</span></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #5B3692  ;">Radio:</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #5B3692;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="Radio" size=5 ></td>
+<tr>
+<td  style="font-size: 1px; line-height: normal;color: white;background-color: #67508A;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #67508A;" type="button" value="Calcular" onclick="Calcular()"></td>
+	<td  style="font-size: 1px; line-height: normal;color: white;background-color: #67508A ;" ><input style="font-size: 30px; line-height: normal;color: white;background-color: #67508A ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+	<td  colspan="2"style="font-size: 30px; line-height: normal;color: white;background-color: #776B8A  ;">Resultado Area:</td>
+</tr>
+<td colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #837E8B;" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular(){
+var Radio = Number(document.getElementById("Radio").value);
+var Pi=3.1416;
+var Area=Pi*(Radio*Radio)
+document.getElementById("resultado").value=Area;
+
+}
+</script>
+<br></br>
+<img src="imagen5.png" width="400" height="400">
+<br></br>
+<br></br>
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>

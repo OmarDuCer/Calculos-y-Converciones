@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo Area Trapecio</title>
+</head>
+<body bgcolor="#0000">
+<br></br>
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Área de un Trapecio</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="35%" >
+<tr>
+<td colspan="5" style="background-color: #800000 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calculo de Area</span></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #7F3838  ;">Base Mayor</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #7F3838;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="B" size=5 ></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #834F4F  ;">Base Menor</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #834F4F;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="b" size=5 ></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #856464  ;">Altura</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #856464;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="h" size=5 ></td>
+<tr>	
+<td  style="font-size: 1px; line-height: normal;color: white;background-color: #857272;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #857272;" type="button" value="Calcular" onclick="Calcular()"></td>
+	<td  style="font-size: 1px; line-height: normal;color: white;background-color: #857272 ;" ><input style="font-size: 30px; line-height: normal;color: white;background-color: #857272 ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+	<td  colspan="2"style="font-size: 30px; line-height: normal;color: white;background-color: #827777  ;">Resultado Area:</td>
+</tr>
+<td colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #827777;" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular(){
+var Bm=Number(document.getElementById("B").value)
+var bm=Number(document.getElementById("b").value)
+var h=Number(document.getElementById("h").value)
+var area=((Bm+bm)*h)/2
+document.getElementById("resultado").value=area;
+
+}
+</script>
+<br></br>
+<img src="imagen10.png" width="300" height="200">
+<br></br>
+
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>

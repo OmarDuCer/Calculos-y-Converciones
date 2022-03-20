@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo IMC</title>
+</head>
+<body bgcolor="#0000">
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Calculo de IMC</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="50%" >
+<tr>
+<td colspan="22" style="background-color: #990000 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calcular IMC</span></td>
+</tr>
+<tr>
+<td WIDTH="50%" style="font-size: 30px; line-height: normal;color: white;background-color: #9F4330  ;">Peso en Kilogramos:</td>
+<td colspan="22"WIDTH="50%" style="font-size: 5px; line-height: normal;color: white;background-color: #9F4330;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="Peso" size=5 ></td>
+</tr>
+<tr>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #A05A4B;">Altura En Centimetros:</td>
+<td colspan="22" style="font-size: 1px; line-height: normal;color: white;background-color: #A05A4B;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="Altura" size=5></td>
+</tr>
+<tr>
+<td colspan="2"style="font-size: 1px; line-height: normal;color: white;background-color: #9F6F65;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #9F6F65;" type="button" value="Calcular" onclick="Calcular()"></td>
+</tr>
+<tr>
+<td style="font-size: 1px; line-height: normal;color: white;background-color: #A4857E  ;" colspan="22"><input style="font-size: 30px; line-height: normal;color: white;background-color: #A4857E ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #A59692;"colspan="22"align="center">Resultado:</td>
+</tr>
+<tr>
+<td style="font-size: 1px; line-height: normal;color: white;background-color: #A49C9A;"colspan="22" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular(){
+var Peso = Number(document.getElementById("Peso").value);
+var Altura = Number(document.getElementById("Altura").value)/100;
+var IMC= Peso/(Altura*Altura);
+document.getElementById("resultado").value=IMC;
+}
+</script>
+<img src="imagen1.png" width="400" height="300">
+<br></br>
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo IMC</title>
+</head>
+<body bgcolor="#0000">
+<br></br>	
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Calculo de Millas a Metros y Viceversa</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="50%" >
+<tr>
+<td colspan="22" style="background-color: #A10083 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calculo de Millas y Metros</span></td>
+</tr>
+<tr>
+<td WIDTH="50%" style="font-size: 30px; line-height: normal;color: white;background-color: #7E1D6C  ;">Millas:</td>
+<td colspan="1"WIDTH="50%" style="font-size: 5px; line-height: normal;color: white;background-color: #7E1D6C;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="millas" size=5 ></td>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #7E1D6C;">Metros:</td>
+<td colspan="1" style="font-size: 1px; line-height: normal;color: white;background-color: #7E1D6C;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="metros" size=5></td>
+</tr>
+<tr>
+<td colspan="2"style="font-size: 1px; line-height: normal;color: white;background-color: #883878;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #883878;" type="button" value="Calcular Metros" onclick="Calcular1()"></td>
+<td colspan="4"style="font-size: 1px; line-height: normal;color: white;background-color: #883878;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #883878;" type="button" value="Calcular Millas" onclick="Calcular2()"></td>
+</tr>
+<tr>
+<td style="font-size: 1px; line-height: normal;color: white;background-color: #834477  ;" colspan="22"><input style="font-size: 30px; line-height: normal;color: white;background-color: #834477 ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #866780;"colspan="22"align="center">Resultado:</td>
+</tr>
+<tr>
+<td style="font-size: 1px; line-height: normal;color: white;background-color: #897A86;"colspan="22" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular1(){
+var Millas = Number(document.getElementById("millas").value);
+var Metros=(Millas*1609.34)
+document.getElementById("resultado").value=Metros;
+}
+function Calcular2(){
+var Metros2 = Number(document.getElementById("metros").value);
+var Millas2=((Metros2)/1609.34)
+document.getElementById("resultado").value=Millas2;
+}
+</script>
+<br><br>
+<img src="imagen9.png" width="300" height="300">
+<br></br>
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>

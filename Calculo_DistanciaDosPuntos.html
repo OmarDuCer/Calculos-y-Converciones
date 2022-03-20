@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo Distancia Entre Dos Puntos</title>
+</head>
+<body bgcolor="#0000">
+<br></br>	
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Distancia entre dos Puntos</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="50%">
+<tr>
+<td colspan="4" style="background-color: #9B9600 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calculo de Distancia Entre Dos puntos</span></td>
+</tr>
+<tr>
+<td width="25%" style="font-size: 30px; line-height: normal;color: white;background-color: #9B963C  ;">Mencione x1:</td>
+<td width="25%" style="font-size: 5px; line-height: normal;color: white;background-color: #9B963C;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="x1" size=8 ></td>
+<td width="25%" style="font-size: 30px; line-height: normal;color: white;background-color: #9B963C  ;">Mencione x2:</td>
+<td width="25%" style="font-size: 5px; line-height: normal;color: white;background-color: #9B963C;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="x2" size=8 ></td>
+<tr>
+	<td style="font-size: 30px; line-height: normal;color: white;background-color: #9B963C  ;">Mencione y1:</td>
+<td  style="font-size: 5px; line-height: normal;color: white;background-color: #9B963C;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="y1" size=8 ></td>
+<td style="font-size: 30px; line-height: normal;color: white;background-color: #9B963C  ;">Mencione y2:</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #9B963C;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="y2" size=8 ></td>
+</tr>
+</tr>
+<tr>
+<td colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #9B9664;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #9B9664;" type="button" value="Calcular" onclick="Calcular()"></td>
+<td colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #9B9664 ;" ><input style="font-size: 30px; line-height: normal;color: white;background-color: #9B9664 ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+<td colspan="4" style="font-size: 30px; line-height: normal;color: white;background-color: #99998A;">Resultado de Distancia:</td>
+</tr>
+<td colspan="4" style="font-size: 1px; line-height: normal;color: black;background-color: #9C9C96;" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled size="20"></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular(){
+var x1=Number(document.getElementById("x1").value);
+var x2=Number(document.getElementById("x2").value);
+var y1=Number(document.getElementById("y1").value);
+var y2=Number(document.getElementById("y2").value);
+var distancia =Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+document.getElementById("resultado").value=distancia; 
+}
+</script>
+<br></br>
+<img src="imagen6.png" width="600" height="150">
+<br></br>
+<br></br>
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>
+math.sqrt((x2-x1)^2+(y2-y1)^2)#Raiz Cuadrada^^^

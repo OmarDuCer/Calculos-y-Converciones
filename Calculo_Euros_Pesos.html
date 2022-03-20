@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculos Euros y Pesos</title>
+</head>
+<body bgcolor="#0000">
+<br></br>	
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Convertir Euros a Pesos y Viceversa</MARQUEE></h1>></center>	
+<form align="center" WIDTH="50%">
+<table align="center" width="50%" >
+<tr>
+<td WIDTH="50%" colspan="5" style="background-color: #004696 ;">
+<span  WIDTH="50%" style="font-size: 70px; line-height: normal;color: white;">Conversiones</span></td>
+</tr>
+<tr>
+<td  WIDTH="50%" style="font-size: 30px; line-height: normal;color: white;background-color: #3A6195  ;">Pesos:</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #3A6195;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="Peso" size=5 ></td>
+<td WIDTH="50%" rowspan="2" style="background: white"><img src="imagen3.png" width=350 heigth=350 alt="Programación"></td>
+<td WIDTH="50%" style="font-size: 30px; line-height: normal;color: white;background-color: #3A6195  ;">Euros:</td>
+<td WIDTH="50%" style="font-size: 5px; line-height: normal;color: white;background-color: #3A6195;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="Euro" size=5 ></td>
+</tr>
+<td  colspan="2" style="font-size: 0px; line-height: normal;color: white;background-color: #526F95;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #526F95;" type="button" value="Calcular €" onclick="Calcular1()"></td>
+<td colspan="2" style="font-size: 0px; line-height: normal;color: white;background-color: #526F95;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #526F95;" type="button" value="Calcular $" onclick="Calcular2()"></td>
+</tr>
+<tr>
+	<td WIDTH="50%" colspan="5"style="font-size: 1px; line-height: normal;color: white;background-color: #6C7E95  ;" ><input style="font-size: 30px; line-height: normal;color: white;background-color: #6C7E95 ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+	<td WIDTH="50%" colspan="2"style="font-size: 30px; line-height: normal;color: white;background-color: #808A96  ;">Euros:</td>
+	<td WIDTH="50%" rowspan="2" style="background: white"><img src="imagen4.png" width=150 heigth=150 alt="Programación"></td>
+	<td WIDTH="50%" colspan="2" style="font-size: 30px; line-height: normal;color: white;background-color: #808A96  ;">Pesos:</td>
+</tr>
+<td WIDTH="50%" colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #919497;" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado1" disabled size="6"></td>
+<td WIDTH="50%" colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #919497;" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado2" disabled size="6"></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular1(){
+var Peso = Number(document.getElementById("Peso").value);
+var euro= Peso/22.77;
+document.getElementById("resultado1").value=euro;
+}
+function Calcular2(){
+var Euro = Number(document.getElementById("Euro").value);
+var peso= Euro*22.77;
+document.getElementById("resultado2").value=peso;
+}
+</script>
+<br></br>
+
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>

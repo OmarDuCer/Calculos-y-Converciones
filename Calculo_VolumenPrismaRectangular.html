@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculo Area Trapecio</title>
+</head>
+<body bgcolor="#0000">
+<br></br>
+<center><h1 style="color: white"><MARQUEE Scrolldelay="40" width="50%">Volumen de un Prisma Rectangular</MARQUEE></h1>></center>	
+<form align="center">
+<table align="center" width="35%" >
+<tr>
+<td colspan="5" style="background-color: #2A2626 ;">
+<span style="font-size: 70px; line-height: normal;color: white;">Calculo del Volumen </span></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #5F5656  ;">Base Largo</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #5F5656;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="Bl" size=5 ></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #817575  ;">Base ancho</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #817575;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="BH" size=5 ></td>
+</tr>
+<tr>
+<td  style="font-size: 30px; line-height: normal;color: white;background-color: #9B8D8D  ;">Altura</td>
+<td style="font-size: 5px; line-height: normal;color: white;background-color: #9B8D8D;"><input style="font-size: 30px; line-height: normal;color: black;" type="text" id="h" size=5 ></td>
+<tr>	
+<td  style="font-size: 1px; line-height: normal;color: white;background-color: #B9A9A9;" align="center"><input style="font-size: 30px; line-height: normal;color: white;background-color: #B9A9A9;" type="button" value="Calcular" onclick="Calcular()"></td>
+	<td  style="font-size: 1px; line-height: normal;color: white;background-color: #B9A9A9 ;" ><input style="font-size: 30px; line-height: normal;color: white;background-color: #B9A9A9 ;" type="reset" value="Limpiar"></td>
+</tr>
+<tr>
+	<td  colspan="2"style="font-size: 30px; line-height: normal;color: white;background-color: #DDCACA  ;">Resultado Volumen:</td>
+</tr>
+<td colspan="2" style="font-size: 1px; line-height: normal;color: white;background-color: #DDCACA;" align="center"><input style="font-size: 30px; line-height: normal;color: black;" align="center"type="text" id="resultado" disabled></td>
+
+</table>
+</form>
+<center>
+<script>
+function Calcular(){
+var Bl=Number(document.getElementById("Bl").value)
+var Bh=Number(document.getElementById("BH").value)
+var h=Number(document.getElementById("h").value)
+var volumen=Bl*Bh*h
+document.getElementById("resultado").value=volumen;
+
+}
+</script>
+<br></br>
+<img src="imagen11.png" width="300" height="300">
+<br></br>
+
+<a href="actividad2.html"><img src="boton_inicio.png" width="150" height="100"></a></td>
+</center>
+
+</body>
+</html>
